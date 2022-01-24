@@ -132,14 +132,30 @@ input[type=checkbox] {  /* checkbox toggles the hamburger via display: none/bloc
     }
 
     /* Turn on the hamburger menu by turning on the sibling of the checkbox .hamburger */
-    input[type=checkbox]:checked ~ .menu {  
+    #checkbox-toggle:checked ~ .menu {  
         display: block;
         transform-origin: top;
         animation: scaleInVert 0.25s;
     }
 
-    input[type=checkbox]:checked:not() ~ .menu {
+    #checkbox-toggle:checked:not() ~ .menu {
         display: none;
+    }
+
+    #checkbox-toggle:checked + label.hamburger > .hamburger-btn > .burger-line {
+        transform: translateX(-35px);
+        background: transparent;
+        transition: all 0.2s ease;
+    }
+
+    #checkbox-toggle:checked + label.hamburger > .hamburger-btn > .burger-line::before {
+        transform: rotate(45deg) translate(35px, -35px);
+        transition: all 0.4s ease;
+    }
+
+    #checkbox-toggle:checked + label.hamburger > .hamburger-btn > .burger-line::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+        transition: all 0.4s ease;
     }
 
     .hamburger {
