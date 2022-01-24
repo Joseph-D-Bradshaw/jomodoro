@@ -143,7 +143,7 @@ input[type=checkbox] {  /* checkbox toggles the hamburger via display: none/bloc
     }
 
     #checkbox-toggle:checked + label.hamburger > .hamburger-btn > .burger-line {
-        transform: translateX(-35px);
+        transform: translateX(-50px);
         background: transparent;
         transition: all 0.2s ease;
     }
