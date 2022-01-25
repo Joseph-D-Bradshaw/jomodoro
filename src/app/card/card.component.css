@@ -1,0 +1,43 @@
+.temp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    color: var(--main-font-color);
+}
+
+/* Desktop */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    padding: 0;
+    margin: 1em;
+    border-radius: 5px;
+    max-width: 480px;
+}
+
+.card .card-top ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+.card .card-body {
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+}
+
+.card .card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+
